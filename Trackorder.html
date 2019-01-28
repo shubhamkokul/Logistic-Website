@@ -1,0 +1,63 @@
+
+<html>
+<head>
+	
+	<title>Track Order</title>
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script type="text/javascript">
+function Confirm(form)
+{
+alert("Delivery Under Processing");
+document.location.href ="main.html";
+form.submit();
+}
+</script>
+</head>
+<body>
+	<div id="header">
+		<div class="area">
+			<div id="logo">
+				<a href="index.html"><img src="images/logo.png" alt="LOGO" height="86" width="170" /></a>
+			</div>
+			<ul id="navigation">
+				<li>
+					<a href="index2.html">Home</a>
+				</li>
+				<li class="selected">
+					<a href="Trackorder.html">Track Order</a>
+				</li>
+				<li>
+					<a href="blog2.html">Blog</a>
+				</li>
+				<li>
+					<a href="contact2.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<div class="blog2">
+<form>
+<h3>Name<br><input type="text" name="name" required><br>
+<h3>E-mail<input type="email" name="email" required placeholder="Enter a Valid Email Address"><br>
+<h3>Tracking Id<input type="text" name="name" id="name"/>
+<button type="submit">Track Order</button><br>
+<h1><input type="button" name="Submit" value="Submit" onClick="Confirm(this.form)">
+</form>
+</div>
+<div class="blog">
+<form>
+<button type="Submit" formaction="main.html">Exit Session</button>
+</form>
+</div>
+	
+	<div id="footer">
+<span class="divider"></span>
+		<div class="area">
+		
+			<p>
+				<span>2014 SJD Logistics. All Rights Reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
